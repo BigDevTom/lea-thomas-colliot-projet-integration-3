@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+p {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -13,20 +13,10 @@ header {
     padding: 20px 0;
 }
 
-h1 h2{
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 10px 30px;
     font-family: "Raleway", sans-serif;
@@ -63,7 +53,6 @@ h1 h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -77,7 +66,8 @@ h1 h2{
 }
 
 .text-section h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 700;
     margin-bottom: 20px;
     color: hsl(243, 87%, 12%);
 }
@@ -129,7 +119,6 @@ h1 h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
 }
@@ -220,7 +209,6 @@ h1 h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
     background-color: hsl(238, 22%, 44%);
@@ -229,7 +217,8 @@ h1 h2{
 
 .access-text {
     flex: 1;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 400px;
 }
 
 .access-text h2 {
@@ -250,6 +239,7 @@ h1 h2{
     gap: 20px;
     flex: 1;
     max-width: 400px;
+    margin-right: 100px;
 }
 
 .access-input input {
@@ -355,4 +345,118 @@ footer {
 .reseau img {
     width: 20px;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 375px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar img {
+        max-height: 30px;
+        margin-bottom: 0;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar li {
+        margin: 0;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;      
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .container h1 {
+       font-size: 25px;      
+    }
+
+    .text-section {
+        margin-bottom: 20px;
+      }
+    
+      .image-section {
+        margin-bottom: 20px;
+      }
+    
+      .input-group {
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .input-group button {
+        width: 80%;
+      }
+
+      .container-stay {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .container-stay h1 {
+        font-size: 18px;
+      }
+
+      .container-stay p {
+        text-align: left;
+      }
+
+      .imagebackground {
+        position: absolute;
+        background-image: url('../maquette/images/bg-curve-mobile.svg');
+      }
+
+      .testimonial {
+        text-align: left;
+      }
+
+      .access {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .access-text {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+
+      .access-input {
+        margin: auto;
+      }
+
+      .access-input button {
+        width: 100%;
+      }
+
+      .logo {
+        margin-left: 0;
+      }
+
+      .info {
+        margin-left: 0;
+      }
+
+      .about {
+        margin-left: 0;
+      }
+
+      .reseau {
+        justify-content: center;
+      }
 }
