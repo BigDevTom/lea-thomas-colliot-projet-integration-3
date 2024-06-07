@@ -32,9 +32,10 @@
                     Access them wherever you need, share and collaborate with friends, 
                     family, and co-workers.</p>
                 <div class="input-group">    
-                    <input type="text" placeholder="entrer votre email">
-                    <button>Get Started</button>
+                    <input id="emailInput" type="email" placeholder="your email" required>
+                    <button id="submitButton">Get Started</button>
                 </div>
+                <div id="errorMessage" style="color: red; display: none;">Please check your mail !</div>
             </section>
             <div class="image-section">
                 <img src="maquette/images/illustration-1.svg" alt="illustration-1">
@@ -75,8 +76,9 @@
                 If you have any questions, our support team would be happy to help you.</p>
         </section>
         <section class="access-input">
-            <input type="text">
-            <button>Get Started For Free</button>
+            <input id="emailInputAccess" type="email" placeholder="your email" required>
+            <div id="errorMessageAccess" style="color: red; display: none;">Please check your mail !</div>
+            <button id="submitButtonAccess">Get Started For Free</button>
         </section>
     </div>    
     </main>
@@ -119,5 +121,6 @@
             </section>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
